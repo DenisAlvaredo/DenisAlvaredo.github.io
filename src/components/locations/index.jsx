@@ -7,7 +7,7 @@ const Locations = ({locations = []}) => {
             {
                 locations.map((item, index) => (
                     <div key={index} className="col mb-4">
-                        <Link to={`/locations/${item.name}`} >
+                        <Link to={`/locations/${item.name}`} className="text-decoration-none text-reset" >
                         <div className="card" style={{minWidth: "200px"}}>
                             <div className="card-body">
                                 <h5 className="card-title">{item.name}</h5>

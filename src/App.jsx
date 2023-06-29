@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react"
 import NavBar from "./components/header"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import IndexCharacters from "./components/screens/indexchar";
@@ -15,7 +14,7 @@ function App() {
       <NavBar brand="Rick and Morty App" />
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<IndexCharacters/>}></Route>
+          <Route path="/*" element={<IndexCharacters />}></Route>
           <Route path="/characters/:name" element={<CharacterData />} ></Route>
           <Route path="/episodes" element={<IndexEpisodes/>}></Route>
           <Route path="/episodes/:name" element={<EpisodeData />} ></Route>
