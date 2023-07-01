@@ -6,6 +6,7 @@ import CharacterData from "./components/characters/Data";
 import EpisodeData from "./components/episodes/Data";
 import IndexLocations from "./components/screens/indexloc";
 import LocationData from "./components/locations/Data";
+import React from "react";
 
 function App() {
 
@@ -15,11 +16,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/*" element={<IndexCharacters />}></Route>
-          <Route path="/characters/:name" element={<CharacterData />} ></Route>
+          <Route path="/characters/:id" element={<CharacterData />} ></Route>
           <Route path="/episodes" element={<IndexEpisodes/>}></Route>
-          <Route path="/episodes/:name" element={<EpisodeData />} ></Route>
+          <Route path="/episodes/:id" element={<EpisodeData />} ></Route>
           <Route path="/locations" element={<IndexLocations />} ></Route>
-          <Route path="/locations/:name" element={<LocationData />} ></Route>
+          <Route path="/locations/:id" element={<LocationData />} ></Route>
         </Routes>
       </BrowserRouter>
     </>

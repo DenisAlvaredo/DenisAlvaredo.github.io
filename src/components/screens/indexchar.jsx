@@ -10,7 +10,7 @@ function IndexCharacters() {
 
   const fetchCharacters = (url) => {
     fetch(url)
-      .then(response => {
+      .then((response)=> {
       if (!response.ok) {
         throw new Error("ERROR HTTP: " + response.status)
       }

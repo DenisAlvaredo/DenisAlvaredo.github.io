@@ -7,7 +7,7 @@ const Episodes = ({episodes = []}) => {
             {
                 episodes.map((item, index) => (
                     <div key={index} className="col mb-4">
-                        <Link to={`/episodes/${item.episode}`} className="text-decoration-none text-reset">
+                        <Link to={`/episodes/${item.id}`} className="text-decoration-none text-reset">
                         <div className="card" style={{minWidth: "200px"}}>
                             <div className="card-body">
                                 <h5 className="card-title">{item.name}</h5>
