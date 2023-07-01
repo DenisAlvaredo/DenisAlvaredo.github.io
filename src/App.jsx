@@ -15,7 +15,7 @@ function App() {
       <NavBar brand="Rick and Morty App" />
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<IndexCharacters />}></Route>
+          <Route path="/" element={<IndexCharacters />}></Route>
           <Route path="/characters/:id" element={<CharacterData />} ></Route>
           <Route path="/episodes" element={<IndexEpisodes/>}></Route>
           <Route path="/episodes/:id" element={<EpisodeData />} ></Route>
