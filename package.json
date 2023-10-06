@@ -1,6 +1,6 @@
 {
   "homepage": "https:denisalvaredo.github.io/rick-and-morty/public/",
-  "name": "Rick and Morty App",
+  "name": "rick-and-morty-app",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "react": "^18.2.0",
