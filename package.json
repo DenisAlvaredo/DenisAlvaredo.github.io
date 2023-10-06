@@ -1,17 +1,14 @@
 {
   "homepage": "https:denisalvaredo.github.io/rick-and-morty/public/",
-  "name": "nav-app",
+  "name": "Rick and Morty App",
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start" : "react-script start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
   },
   "dependencies": {
     "react": "^18.2.0",
